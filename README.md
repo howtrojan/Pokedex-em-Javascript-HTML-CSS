@@ -4,9 +4,6 @@ Desenvolvi um projeto de Pokedex durante um curso da DIO de programação. Este 
 
 Fique à vontade para clonar o repositório e experimentar a aplicação.
 
-Agradecimentos!
-Este texto simples fornece uma breve visão geral do seu projeto Pokedex em JavaScript, CSS e HTML. Certifique-se de adaptá-lo conforme necessário.
-
 
 
 
