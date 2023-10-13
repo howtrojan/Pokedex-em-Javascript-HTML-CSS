@@ -2,7 +2,7 @@ const pokemonList = document.getElementById('pokemonList')
 const loadMoreButton = document.getElementById('loadMoreButton')
 
 const maxRecords = 151
-const limit = 10
+const limit = 12
 let offset = 0;
 
 function convertPokemonToLi(pokemon) {
@@ -45,3 +45,14 @@ loadMoreButton.addEventListener('click', () => {
         loadPokemonItens(offset, limit)
     }
 })
+
+
+pokemonList.addEventListener('click', (event) => {
+    const clickedPokemon = event.target.closest('.pokemon');
+    if (clickedPokemon) {
+        const pokemonNumber = clickedPokemon.querySelector('.number').textContent.replace('#', '');
+
+        // Redirecionar para a página de detalhes do Pokémon com o ID na URL
+        window.location.href = `detail.html?id=${pokemonNumber}`;
+    }
+});

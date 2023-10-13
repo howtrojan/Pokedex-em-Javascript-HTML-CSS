@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalhe do Pokemon</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <!--  css do projeto   -->
+    <link rel="stylesheet" href="/assets/css/global.css">
+    <link rel="stylesheet" href="/assets/css/pokedex.css">
+    <link rel="stylesheet" href="/assets/css/detalhes.css"> <!-- Adicione um arquivo de CSS separado para detalhes -->
+
+</head>
+<body>
+    <section id="content" class="pokemons">
+        <div id="pokemonDetail" class="detalhes">
+            <h1>Detalhes do Pokémon</h1>
+            <img src="" alt="Imagem do Pokémon" id="pokemon-image">
+            
+            <!-- Abas para informações do Pokémon -->
+            <div class="tab-buttons">
+                <button class="tab-button" data-tab="about">Sobre</button>
+                <button class="tab-button" data-tab="stats">Estatísticas</button>
+                <button class="tab-button" data-tab="moves">Movimentos</button>
+            </div>
+
+            <!-- Conteúdo das abas -->
+            <div class="tab-content">
+                <div class="tab about">
+                    <!-- Informações sobre o Pokémon -->
+                </div>
+                <div class="tab stats">
+                    <!-- Estatísticas do Pokémon -->
+                </div>
+                <div class="tab moves">
+                    <!-- Lista de movimentos do Pokémon -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="assets/js/pokemon-model.js"></script>
+    <script src="assets/js/poke-api.js"></script>
+    <script src="assets/js/pokemon-detail.js"></script>  
+</body>
+</html>

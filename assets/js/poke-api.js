@@ -1,5 +1,5 @@
-
 const pokeApi = {}
+const idpokemon = 1;
 
 function convertPokeApiDetailToPokemon(pokeDetail) {
     const pokemon = new Pokemon()
@@ -33,3 +33,11 @@ pokeApi.getPokemons = (offset = 0, limit = 5) => {
         .then((detailRequests) => Promise.all(detailRequests))
         .then((pokemonsDetails) => pokemonsDetails)
 }
+
+pokeApi.getDetail = (idpokemon) => {
+    const url = `https://pokeapi.co/api/v2/pokemon/${idpokemon}`        
+    return fetch(url)
+        .then((response) => response.json())        
+}
+
+
